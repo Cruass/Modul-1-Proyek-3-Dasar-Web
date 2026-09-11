@@ -1,0 +1,115 @@
+/* BASE & TOKENS */
+:root {
+    --color-primary: #d9480f; 
+    --color-primary-hover: #b93d0c;
+    --color-background: #fff8f0; 
+    --color-text: #212529;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    overflow-wrap: break-word; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* SECTION PADDING */
+.hero-section, .feature-section, .contact-section {
+    padding: var(--spacing-lg) 0;
+}
+
+.feature-section {
+    background-color: white; /* Memberi kontras untuk bagian kartu */
+}
+
+/* ---------------------------------------------------
+   TUGAS CSS-MU: LENGKAPI BAGIAN DI BAWAH INI 
+--------------------------------------------------- */
+
+/* 1. HEADER FLEXBOX */
+.header-flex {
+    /* TULIS KODEMU DI SINI:
+       - Buat jadi flex container
+       - Atur agar logo ada di kiri dan nav ada di kanan 
+       - Beri alignment vertikal di tengah */
+}
+
+header {
+    background-color: white;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 2. STYLING NAV LINK */
+.nav-link {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* 3. STYLING TOMBOL CTA */
+.button {
+    /* TULIS KODEMU DI SINI:
+       - Buat jadi inline-block
+       - Beri warna background dari --color-primary
+       - Beri teks warna putih, hilangkan underline
+       - Beri padding dan border-radius */
+}
+
+.button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* 4. FEATURE CARDS FLEXBOX (Syarat MP-06) */
+.feature-container {
+    /* TULIS KODEMU DI SINI:
+       - Buat jadi flex container
+       - Beri jarak antar kartu (gap)
+       - Atur flex-wrap agar kalau di mobile dia turun ke bawah */
+    margin-top: var(--spacing-md);
+}
+
+.card {
+    /* TULIS KODEMU DI SINI:
+       - Atur agar tiap kartu berbagi ruang seimbang (flex)
+       - Mencegah overflow dengan min-width: 0 */
+    background-color: var(--color-background);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+}
+
+.card img {
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* 5. FOOTER */
+footer {
+    background-color: var(--color-text);
+    color: white;
+    padding: var(--spacing-md) 0;
+}

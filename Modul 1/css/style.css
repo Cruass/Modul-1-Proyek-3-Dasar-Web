@@ -1,0 +1,144 @@
+
+:root {
+    --color-primary: #2457d6;
+    --color-background: #f3f4f6;
+    --color-text: #172033;
+    --spacing: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing);
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #dbeafe;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link:focus-visible,
+.button:focus-visible {
+    outline: 3px solid #f4b000;
+    outline-offset: 3px;
+}
+
+main {
+    padding: 30px 0;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #dbe2ea;
+    border-radius: 12px;
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #193ca0;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+}
+
+.profile-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #dbe2ea;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+    }
+}
+
