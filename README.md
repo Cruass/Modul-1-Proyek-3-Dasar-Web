@@ -1,5 +1,5 @@
 # Modul-1-Dasar-Web
-# Praktikum Modul 1 - [Nama Lengkap] / [NIM]
+# Praktikum Modul 1 - Muhammad Rayhan Maulana Farid / 251511054
 
 ## Ringkasan halaman
 
